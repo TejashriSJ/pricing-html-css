@@ -15,6 +15,7 @@ body {
 }
 .heading {
   margin-top: 50px;
+  color: hsl(233, 13%, 49%);
 }
 .toggle-text {
   color: rgb(138, 137, 137);
