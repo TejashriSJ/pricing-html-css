@@ -1,7 +1,7 @@
 body {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  background-color: rgba(227, 231, 231, 0.993);
+  background-color: hsl(240, 78%, 98%);
   background-image: url("images/bg-top.svg");
   background-position: top -30px right -190px;
   background-repeat: no-repeat;
@@ -35,8 +35,8 @@ body {
 
 label {
   display: inline-block;
-  width: 80px;
-  height: 40px;
+  width: 65px;
+  height: 30px;
   border-radius: 20px;
   background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   margin-right: 30px;
@@ -45,20 +45,22 @@ label {
 label:before {
   position: relative;
   display: inline-block;
-  top: 3px;
-  left: 3px;
+  top: 2px;
+  left: 37px;
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   background: #eee;
   border-radius: 50%;
-  transition: left 300ms linear;
+  transition: left 200ms linear;
 }
+
 label:hover {
   background: hsl(234, 14%, 74%);
 }
+
 input:checked + label::before {
-  left: 40px;
+  left: 3px;
 }
 .inner-container {
   width: 100vw;
@@ -108,6 +110,23 @@ hr {
   color: hsl(237, 63%, 64%);
   background: white;
 }
+.button:hover {
+  background: hsl(240, 78%, 98%);
+  color: hsl(233, 13%, 49%);
+  border: 1px solid hsl(234, 14%, 74%);
+}
+.middle-btn:hover {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  border: 1px solid white;
+}
+.price-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .amount,
 .middle-amount {
   color: hsl(232, 13%, 33%);
@@ -118,8 +137,16 @@ hr {
 .middle-amount {
   color: white;
 }
+.dollor-sign {
+  font-size: 30px;
+  color: hsl(232, 13%, 33%);
+}
+.middle-dollor-sign {
+  font-size: 30px;
+  color: white;
+}
 
-@media (min-width: 1440px) {
+@media (min-width: 376px) {
   body {
     background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
     background-position: top right, bottom left;
