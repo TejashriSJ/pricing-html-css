@@ -58,7 +58,7 @@ label:before {
 }
 
 label:hover {
-  background: hsl(234, 14%, 74%);
+  background: hsl(236, 72%, 79%);
 }
 
 input:checked + label::before {
@@ -94,9 +94,10 @@ hr {
 }
 .button,
 .middle-btn {
-  padding: 10px;
+  padding: 15px;
   padding-left: 25%;
   padding-right: 25%;
+  margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
   text-transform: uppercase;
@@ -105,7 +106,7 @@ hr {
   border-radius: 5px;
   cursor: pointer;
   border: none;
-  font-weight: bold;
+  font-family: "Montserrat";
 }
 .middle-btn {
   color: hsl(237, 63%, 64%);
@@ -131,7 +132,7 @@ hr {
 .amount,
 .middle-amount {
   color: hsl(232, 13%, 33%);
-  font-size: 60px;
+  font-size: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
